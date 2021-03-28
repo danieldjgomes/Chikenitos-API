@@ -36,16 +36,20 @@ public class PesquisaController {
 	@GetMapping("/{pesquisaId}")
 	public ResponseEntity<Pesquisa> buscar(@PathVariable long pesquisaId){
 		Pesquisa pesquisa = pesquisaRoot.buscar(pesquisaId);
+		
 		if (pesquisa != null) {
 			return ResponseEntity.ok(pesquisa);
 		}
 		return ResponseEntity.notFound().build();
 	}
+	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public Pesquisa salvar(@RequestBody Pesquisa pesquisa){
 		return pesquisaRoot.salvar(pesquisa);
 	}
+	
+	
 	@DeleteMapping(("/{pesquisaId}"))
 	public ResponseEntity<Pesquisa> remover(@PathVariable long pesquisaId) {
 		try {
