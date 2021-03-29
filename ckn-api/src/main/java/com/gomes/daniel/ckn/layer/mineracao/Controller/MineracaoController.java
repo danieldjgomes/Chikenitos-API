@@ -16,7 +16,8 @@ public class MineracaoController {
 		
 	public void salvar(Pesquisa pesquisa) {
 		pesquisaRoot.salvar(pesquisa);
-		System.out.println(pesquisa.toString());
+		//System.out.println(pesquisa.toString());
+		
 	}
 	
 
