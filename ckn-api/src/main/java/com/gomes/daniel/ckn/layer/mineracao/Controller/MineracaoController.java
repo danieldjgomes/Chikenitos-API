@@ -19,6 +19,6 @@ public class MineracaoController {
 		//System.out.println(pesquisa.toString());
 		
 	}
-	
+		
 
 }
