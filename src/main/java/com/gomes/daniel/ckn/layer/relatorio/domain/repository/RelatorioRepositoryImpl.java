@@ -55,7 +55,6 @@ public class RelatorioRepositoryImpl implements RelatorioRepository {
 	@Transactional
 	public void truncarSemanal() {
 		manager.createNativeQuery("truncate table semanal").executeUpdate();
-		
 	}
 	
 
