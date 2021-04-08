@@ -19,7 +19,7 @@ public class RelatorioControllerScheduled {
 	
 	@Scheduled(cron = "0 15 0 * * *") // Diario: 00:15
 	public void GeraRelatorioDiario() {
-		//relatorioService.truncarDiario();
+		
 		System.out.println("Relatorio Diario realizado: " + LocalDateTime.now());
 		relatorioService.salvarDiario();
 		
@@ -30,14 +30,14 @@ public class RelatorioControllerScheduled {
 	public void GeraRelatorioSemanal() {
 		System.out.println("Relatorio Semanal realizado: " + LocalDateTime.now());
 		relatorioService.salvarSemanal();
-		//relatorioService.truncarSemanal();
+		
 	}
 	
 	@Scheduled(cron = "0 0  3 28 * *")	//Mensal: Dia 28 03:00
 	public void GeraRelatorioMensal() {
 		System.out.println("Relatorio mensal realizado: " + LocalDateTime.now());
 		relatorioService.salvarMensal();
-		//relatorioService.truncarMensal();
+	
 	}
 
 }

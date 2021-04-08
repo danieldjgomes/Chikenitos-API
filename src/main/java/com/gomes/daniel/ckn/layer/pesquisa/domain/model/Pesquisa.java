@@ -56,11 +56,10 @@ public class Pesquisa {
 		if (this.data.getYear() 	== date.getYear() &&
 			this.data.getMonth()	== date.getMonth()&&
 			this.data.getDay()		== date.getDay()) {
-			//System.out.println("true");
+			
 			return true;
 		}
 		else {
-			//System.out.println("false");
 			return false;
 		}
 	}

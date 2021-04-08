@@ -66,7 +66,7 @@ public class MineracaoRepositoryImpl implements MineracaoRepository {
 					)/100;	
 		}
 		catch (Exception nullException) {
-			System.out.println("Null encontrado\n");
+			System.out.println("Valor não encontrado!\n");
 		}
 		
 		return new Pesquisa(new Date(System.currentTimeMillis()),mercado,value);
