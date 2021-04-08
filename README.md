@@ -47,6 +47,13 @@ Responsável pela persistência dos dados minerados pela aplicação, cada consu
 <img src="https://user-images.githubusercontent.com/50127863/114090161-71ae6f80-988d-11eb-8663-4a8f9c8a2203.png">
 </p>
 
+###Mineracao 
+Responsável pela busca dos dados atraves do Jsoup, através da estrutura HTML da pagina, ele busca através de classes ou chaves de texto o preço do produto, após obter o dado, é instanciada a classe PesquisaRoot para realizar a persistência dos dados, a estrutura do bloco é descrito pelo UML abaixo:
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/50127863/114091692-5b091800-988f-11eb-871d-4ef9f94c8dc9.png">
+</p>
+
 
   
 
