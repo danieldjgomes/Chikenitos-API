@@ -5,8 +5,6 @@
 </p>
 CKN Api é uma aplicação Spring de baixa complexidade utilizada para consultar o preço de produtos, por meio do JPA armazena os dados que posteriormente serão catalizados para consumo para consumo da API.
 
-![Heroku](http://heroku-badge.herokuapp.com/?app=ckn-api&style=flat)
-
 Para a visualização foi criado um dashboard, Chikenitos Coin, que pode ser acessado através deste  <a href="https://dashboard-ckn-dhe84s063-danieldjgomes.vercel.app/"> link<a/>. 
  
 <p align="center">
