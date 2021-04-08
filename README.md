@@ -3,6 +3,7 @@
 <img src="https://user-images.githubusercontent.com/50127863/114079121-2b064880-9880-11eb-8aa6-08681a28fe31.png">
 </p>
 CKN Api é uma aplicação Spring de baixa complexidade utilizada para consultar o preço de produtos, por meio do JPA armazena os dados que posteriormente serão catalizados para consumo para consumo da API.
+[![Heroku](https://heroku-badge.herokuapp.com/?app=ckn-api)]
 
 
 
@@ -56,8 +57,13 @@ Responsável pela busca dos dados atraves do Jsoup, através da estrutura HTML d
 
 A inversão de dependência neste bloco foi essencial para a estruturação e legibilidade do código, caso queira entender um pouco mais sobre este conceito, recomendo que leia meu artigo sobre o assunto, que pode ser acessado <a href="https://dev.to/danieldjgomes/injecao-de-dependencias-com-spring-ib"> aqui<a/>.
 
+### Relatorio
+Responsável pela combinação das pesquisas de forma que gere relatórios de valor diário, semanal e mensal da média das pesquisas naquele periodo, deste modo é estipulado o valor da moeda, a estrutura do bloco é descrito pelo UML abaixo:
 
-  
+<p align="center">
+<img src="https://user-images.githubusercontent.com/50127863/114093056-06669c80-9891-11eb-9ae6-237e81db3fe9.png">
+</p>
+
 
 #### Heroku
 
