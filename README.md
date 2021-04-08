@@ -19,15 +19,10 @@ Tabela de conteúdos
 - [Dashboard](#Dashboard)
 
 
-# Heading levels
-
-> This is a fixture to test heading levels
-
-<!-- toc -->
 
 ## Contexto
 
-This is an h1 heading
+Em um contexto descontraido entre amigos era discutido a utilização do preço do chikenitos, também conhecido como nugget de frango, como parametro para o preço de produtos vendidos. "Isso está muito caro, sabe quantos chikenitos eu consigo comprar com esse valor?", se tornou uma frases comum entre as conversas. Estrapolando a piada e se tornando então uma unidade em si, foi necessário uma padronização e logo surgiu a ideia de criar uma aplicação para definir preço atual do chikenitos.
 
 ## Tecnologia
 
