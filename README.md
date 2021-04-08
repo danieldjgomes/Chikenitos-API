@@ -41,13 +41,13 @@ Tabela de conteúdos
 
 Foi planejado segmentar a aplicação em três blocos distintos:
 
-###Pesquisa
+### Pesquisa
 Responsável pela persistência dos dados minerados pela aplicação, cada consulta realizada é salva como um objeto Pesquisa no contexto de persistência do projeto, algumas classes foram desenvolvidas para uma futura implementação de security e podem estar comentadas no código final, a estrutura do bloco é descrito pelo UML abaixo:
 <p align="center">
 <img src="https://user-images.githubusercontent.com/50127863/114090161-71ae6f80-988d-11eb-8663-4a8f9c8a2203.png">
 </p>
 
-###Mineracao 
+### Mineracao 
 Responsável pela busca dos dados atraves do Jsoup, através da estrutura HTML da pagina, ele busca através de classes ou chaves de texto o preço do produto, após obter o dado, é instanciada a classe PesquisaRoot para realizar a persistência dos dados, a estrutura do bloco é descrito pelo UML abaixo:
 
 <p align="center">
