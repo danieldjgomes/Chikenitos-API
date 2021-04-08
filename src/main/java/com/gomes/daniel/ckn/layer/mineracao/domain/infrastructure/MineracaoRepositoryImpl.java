@@ -6,6 +6,8 @@ import java.util.Date;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import org.springframework.stereotype.Component;
 
 import com.gomes.daniel.ckn.layer.mineracao.domain.exception.ErroNaColetaException;
@@ -28,30 +30,46 @@ public class MineracaoRepositoryImpl implements MineracaoRepository {
 		} 
 		catch (SocketTimeoutException e) {
 			 throw new ErroNaColetaException(
-			 String.format("Ocorreu um erro na coleta dos dados no mercado %s", site.getMercado().getNome()));
+			 String.format("Ocorreu um erro na coleta dos dados no mercado"));
 		 }
 		
 		catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+			
+		Double value = (Double) null;
+		Elements elements = null;
+		Element element = null;
+		String content = null;
 		
 		
+		elements = doc.select(classe);
 		
-		String out = doc.select(classe)
-				.first()
-				.text(); 
+		if (elements != null) {
+			element = elements.first();
+		}
 		
-		double a = Double.valueOf(out
-				.replaceAll("[^0-9]", "")
-				)/100;	
-
-
-		System.out.println(a);
+		if (element != null) {
+			content = element.text();
+		}
 		
-	
+			
+		if (content == null) {
+			System.out.println(doc.getElementsContainingOwnText("R$").first().text());
+			content = doc.getElementsContainingOwnText("R$").first().text();
+			}
 		
-		return new Pesquisa(new Date(System.currentTimeMillis()),mercado,a);
+		
+		try{	
+			value = Double.valueOf(content
+					.replaceAll("[^0-9]", "")
+					)/100;	
+		}
+		catch (Exception nullException) {
+			System.out.println("Null encontrado\n");
+		}
+		
+		return new Pesquisa(new Date(System.currentTimeMillis()),mercado,value);
 		
 	}
 

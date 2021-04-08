@@ -7,16 +7,16 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class Carrefour extends Site {
+public class Semar extends Site {
 	
 	private String url;
 	private String classeCss;
 	private Mercado mercado;
 	
-	public Carrefour() {
-		this.url = "https://mercado.carrefour.com.br/nuggets-de-frango-tradicional-sadia-300g-4496914/p";
-		this.classeCss = "span.vtex-product-price-1-x-currencyContainer";
-		this.mercado = new Mercado(1l,"Carrefour");
+	public Semar() {
+		this.url = "https://drive.gruposemar.com.br/products/chikenitos-seara-300g-trad-un";
+		this.classeCss = "h4.principal";
+		this.mercado = new Mercado(1l,"Semar");
 	}
 	
 	

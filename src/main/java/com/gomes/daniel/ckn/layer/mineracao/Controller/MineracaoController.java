@@ -15,7 +15,13 @@ public class MineracaoController {
 	PesquisaRoot pesquisaRoot;
 		
 	public void salvar(Pesquisa pesquisa) {
-		pesquisaRoot.salvar(pesquisa);
+		if (pesquisa != null){
+			pesquisaRoot.salvar(pesquisa);
+		}
+		else {
+			System.out.println("Erro na mineração\n");
+		}
+		
 		//System.out.println(pesquisa.toString());
 		
 	}
