@@ -54,6 +54,8 @@ Responsável pela busca dos dados atraves do Jsoup, através da estrutura HTML d
 <img src="https://user-images.githubusercontent.com/50127863/114091692-5b091800-988f-11eb-871d-4ef9f94c8dc9.png">
 </p>
 
+A inversão de dependência neste bloco foi essencial para a estruturação e legibilidade do código, caso queira entender um pouco mais sobre este conceito, recomendo que leia meu artigo sobre o assunto, que pode ser acessado <a href="https://dev.to/danieldjgomes/injecao-de-dependencias-com-spring-ib"> aqui<a/>.
+
 
   
 
