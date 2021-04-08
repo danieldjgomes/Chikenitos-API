@@ -6,6 +6,11 @@ CKN Api é uma aplicação Spring de baixa complexidade utilizada para consultar
 
 ![Heroku](https://heroku-badge.herokuapp.com/?app=ckn-api)
 
+Para a visualização foi criado um dashboard, Chikenitos Coin, que pode ser acessado através deste  <a href="https://dashboard-ckn-dhe84s063-danieldjgomes.vercel.app/"> link<a/>. 
+ 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/50127863/114095663-12a02900-9894-11eb-92c2-2633073f3339.png">
+</p>
 
 
 
@@ -15,13 +20,12 @@ Tabela de conteúdos
 =================
 - [Contexto](#contexto)
 - [Tecnologia](#tecnologia)
-  * [Back-End](#Back-end)
-    + [Spring](#Spring)
-    + [Heroku](#Heroku)
-  * [Front-End](#Front-End)
-    + [React](#React)
-    + [Vercel](#Vercel)
-- [Dashboard](#Dashboard)
+  * [Back-End](#back-end)
+    + [Spring](#spring)
+    + [Heroku](#heroku)
+  * [Front-End](#front-End)
+    + [React](#react)
+    + [Vercel](#vercel)
 
 
 
@@ -70,25 +74,23 @@ Responsável pela combinação das pesquisas de forma que gere relatórios de va
 
 
 #### Heroku
+A plataforma selecionada para o deploy da aplicação foi o Heroku, o deploy é feito de forma contínua através deste repositorio. Foram utilizados dois add-ons, ClearDB MySQL, para persistencia de dados utilizando MySql e LogDNA, que facilita a leitura de logs da aplicação.
 
-This is an h3 heading
 
 ### Front-end
 
-This is an h2 heading
+O front end foi feita de forma simplificada e minimalista, voltado para ser um dashboard demonstrativo da api, o diretório do front end pode ser encontrada <a href="https://github.com/danieldjgomes/Dashboard-CKN"> aqui<a/>. 
 
 
 #### React
 
-This is an h3 heading
+Foi utilizado o React para desenvolver o front end, trata-se uma Single-Page application contendo componentes da biblioteca Charts Js 3.0.2 para gerar e personalizar o grafico de valores por tempo.
 
 #### Vercel
 
-This is an h3 heading
+Foi realizado o deploy do front end foi realizado utilizando Vercel, o deploy é feito de forma contínua pelo diretório do github do dashboard.
 
-## Dashboardd
 
-This is an h1 heading
 
 
 
