@@ -1,7 +1,8 @@
 # Chikenitos API
-![](https://user-images.githubusercontent.com/50127863/114079121-2b064880-9880-11eb-8aa6-08681a28fe31.png)
+<center>
 <img src="https://user-images.githubusercontent.com/50127863/114079121-2b064880-9880-11eb-8aa6-08681a28fe31.png"> 
-### CKN Api é uma aplicação Spring de baixa complexidade utilizada para consultar o preço de produtos, por meio do JPA armazena os dados que posteriormente serão catalizados para consumo para consumo da API.
+<center/>
+CKN Api é uma aplicação Spring de baixa complexidade utilizada para consultar o preço de produtos, por meio do JPA armazena os dados que posteriormente serão catalizados para consumo para consumo da API.
 
 
 
