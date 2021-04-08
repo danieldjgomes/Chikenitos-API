@@ -27,7 +27,7 @@ Tabela de conteúdos
 
 <!-- toc -->
 
-## Heading
+## Teste
 
 This is an h1 heading
 
@@ -62,7 +62,3 @@ This is an h2 heading
 #### Sub-sub-heading
 
 This is an h3 heading
-
-
-
-(#Sobre)
