@@ -33,9 +33,9 @@ Tabela de conteúdos
 #### Spring
 
  Para desenvolvimento do back-end foi utilizado o framework Spring. Para fazer a configuração e inicialização da aplicação foi utilizada a versão 2.3.8 do Spring Boot e Spring Data JPA.
-  No planejamento do projeto foi primordialmente idealizado uma estrutura UML, a estrutura de classes de domínio ficou da seguinte forma:
+ No planejamento do projeto foi primordialmente idealizado uma estrutura UML, a estrutura de classes de domínio ficou da seguinte forma:
   
-  <p align="center">
+ <p align="center">
 <img src="https://user-images.githubusercontent.com/50127863/114086762-66f1db80-9889-11eb-902e-174f8b8d5fc6.png">
 </p>
   
