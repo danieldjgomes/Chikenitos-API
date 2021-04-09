@@ -18,7 +18,8 @@ public class MineracaoControllerScheduled {
 	@Autowired
 	MineracaoService mineracaoService;
 
-	@Scheduled(cron = "0 0 0 * * *") //Diario: 00:00
+	//@Scheduled(cron = "0 0 0 * * *") //Diario: 00:00
+	@Scheduled(cron = "0 52 0 * * *") //Diario: 00:00
 	public void alimentaPesquisas() {
 		System.out.println("Pesquisa realizada: " + LocalDateTime.now());
 		mineracaoService.salvar();	
