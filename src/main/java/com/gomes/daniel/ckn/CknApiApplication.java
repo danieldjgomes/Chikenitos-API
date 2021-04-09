@@ -9,12 +9,11 @@ import com.gomes.daniel.ckn.layer.relatorio.service.RelatorioService;
 @SpringBootApplication
 public class CknApiApplication {
 	
-	@Autowired
-	RelatorioService relatorioService;
+	
 	
 	public static void main(String[] args) {
 		SpringApplication.run(CknApiApplication.class, args);
-		relatorioService.GeraRelatorioDiario();
+		
 		
 		
 		

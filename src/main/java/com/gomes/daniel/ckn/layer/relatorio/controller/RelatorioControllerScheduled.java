@@ -17,7 +17,7 @@ public class RelatorioControllerScheduled {
 	RelatorioService relatorioService;
 	
 	
-	@Scheduled(cron = "0 8 1 * * *") // Diario: 00:15
+	@Scheduled(cron = "0 10 1 * * *") // Diario: 00:15
 	public void GeraRelatorioDiario() {
 		
 		System.out.println("Relatorio Diario realizado: " + LocalDateTime.now());
