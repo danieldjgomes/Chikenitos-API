@@ -22,6 +22,7 @@ public class RelatorioControllerScheduled {
 		
 		System.out.println("Relatorio Diario realizado: " + LocalDateTime.now());
 		relatorioService.salvarDiario();
+		relatorioService.truncarDiario();
 		
 	}
 	
@@ -30,6 +31,7 @@ public class RelatorioControllerScheduled {
 	public void GeraRelatorioSemanal() {
 		System.out.println("Relatorio Semanal realizado: " + LocalDateTime.now());
 		relatorioService.salvarSemanal();
+		relatorioService.truncarSemanal();
 		
 	}
 	
@@ -37,6 +39,7 @@ public class RelatorioControllerScheduled {
 	public void GeraRelatorioMensal() {
 		System.out.println("Relatorio mensal realizado: " + LocalDateTime.now());
 		relatorioService.salvarMensal();
+		relatorioService.truncarMensal();
 	
 	}
 
