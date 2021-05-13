@@ -42,7 +42,6 @@ public class RelatorioServiceMensal {
 				}
 				
 				if (pesquisa.getData().getYear() == data.getYear() && 
-					relatorioInfrastructure.pegarSemana(pesquisa.getData()) == relatorioInfrastructure.pegarSemana(data) &&
 					pesquisa.getData().getMonth() == data.getMonth()
 						) {
 					totalDia += pesquisa.getValor();
