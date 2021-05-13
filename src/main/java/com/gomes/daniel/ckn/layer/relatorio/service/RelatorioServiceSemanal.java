@@ -42,6 +42,7 @@ public class RelatorioServiceSemanal {
 			}
 			
 			if (pesquisa.getData().getYear() == data.getYear() && relatorioInfrastructure.pegarSemana(pesquisa.getData()) == relatorioInfrastructure.pegarSemana(data)) {
+
 				totalDia += pesquisa.getValor();
 				qtdeValores ++;
 				//System.out.printf("Id: %d TotalDia: %f qtdeValores: %d  Data: %tD%n",id, totalDia, qtdeValores, data);

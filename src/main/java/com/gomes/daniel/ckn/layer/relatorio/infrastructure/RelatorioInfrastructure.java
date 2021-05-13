@@ -65,6 +65,6 @@ public class RelatorioInfrastructure {
 	public int pegarSemana(Date date) {
 		 Calendar cl = Calendar. getInstance();
 	      cl.setTime(date);  
-	      return cl.WEEK_OF_YEAR;
+	      return cl.get(Calendar.WEEK_OF_YEAR);
 	}
 }

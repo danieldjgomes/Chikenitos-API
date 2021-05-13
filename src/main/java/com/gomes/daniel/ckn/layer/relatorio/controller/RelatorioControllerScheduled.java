@@ -31,9 +31,7 @@ public class RelatorioControllerScheduled {
 	@Scheduled(cron = " 0 0 1 * * 6")	// Semanal: Sabado 01:00
 	public void GeraRelatorioSemanal() {
 		System.out.println("Relatorio Semanal realizado: " + LocalDateTime.now());
-
 		relatorioService.truncarSemanal();
-		
 		relatorioService.salvarSemanal();
 	}
 	

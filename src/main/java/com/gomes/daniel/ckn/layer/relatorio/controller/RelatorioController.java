@@ -13,6 +13,7 @@ import com.gomes.daniel.ckn.layer.relatorio.domain.model.Diario;
 import com.gomes.daniel.ckn.layer.relatorio.domain.model.Mensal;
 import com.gomes.daniel.ckn.layer.relatorio.domain.model.Semanal;
 import com.gomes.daniel.ckn.layer.relatorio.domain.repository.RelatorioRepositoryImpl;
+import com.gomes.daniel.ckn.layer.relatorio.service.RelatorioServiceSemanal;
 
 @RestController
 @CrossOrigin
@@ -22,6 +23,26 @@ public class RelatorioController {
 	
 	@Autowired
 	RelatorioRepositoryImpl relatorioRepositoryImpl;
+	
+	@Autowired
+	RelatorioServiceSemanal relatorioServiceSemanal;
+	
+	@GetMapping("/gerar/semanal")
+	public ResponseEntity<List<Semanal>> gerarSemanal(){
+		relatorioServiceSemanal.truncarSemanal();
+		relatorioServiceSemanal.salvarSemanal();
+		
+		List<Semanal> semanais = relatorioRepositoryImpl.listarSemanal();
+		
+		if(semanais != null) {
+			return ResponseEntity.ok(semanais);
+		}
+		
+		else {
+			return ResponseEntity.notFound().build();
+		}
+		
+	}
 	
 	@GetMapping("/diario")
 	public ResponseEntity<List<Diario>> listarDiario(){
