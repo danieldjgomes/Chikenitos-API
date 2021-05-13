@@ -41,7 +41,10 @@ public class RelatorioServiceMensal {
 					data = pesquisa.getData();
 				}
 				
-				if (pesquisa.getData().getYear() == data.getYear() && relatorioInfrastructure.pegarSemana(pesquisa.getData()) == relatorioInfrastructure.pegarSemana(data)) {
+				if (pesquisa.getData().getYear() == data.getYear() && 
+					relatorioInfrastructure.pegarSemana(pesquisa.getData()) == relatorioInfrastructure.pegarSemana(data) &&
+					pesquisa.getData().getMonth() == data.getMonth()
+						) {
 					totalDia += pesquisa.getValor();
 					qtdeValores ++;
 					//System.out.printf("Id: %d TotalDia: %f qtdeValores: %d  Data: %tD%n",id, totalDia, qtdeValores, data);
@@ -51,7 +54,7 @@ public class RelatorioServiceMensal {
 					qtdeValores++;
 					id++;
 					
-					System.out.printf("Novo Semanal: %d %f %tD%n \n",id, totalDia/qtdeValores, data);
+					System.out.printf("Novo Mensal: %d %f %tD%n \n",id, totalDia/qtdeValores, data);
 					relatorioRespositoryImpl.salvar(new Mensal(id,totalDia/qtdeValores,data.getMonth(),data.getYear()));
 					//totalDiario.add(new Diario(id, totalDia/qtdeValores, data));
 					
