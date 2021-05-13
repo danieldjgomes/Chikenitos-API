@@ -25,47 +25,6 @@ public class RelatorioController {
 	@Autowired
 	RelatorioRepositoryImpl relatorioRepositoryImpl;
 	
-	@Autowired
-	RelatorioServiceSemanal relatorioServiceSemanal;
-	
-	@Autowired
-	RelatorioServiceMensal relatorioServiceMensal;
-	
-	@GetMapping("/gerar/semanal")
-	public ResponseEntity<List<Semanal>> gerarSemanal(){
-		relatorioServiceSemanal.truncarSemanal();
-		relatorioServiceSemanal.salvarSemanal();
-		
-		List<Semanal> semanais = relatorioRepositoryImpl.listarSemanal();
-		
-		if(semanais != null) {
-			return ResponseEntity.ok(semanais);
-		}
-		
-		else {
-			return ResponseEntity.notFound().build();
-		}
-		
-	}
-	
-	
-	@GetMapping("/gerar/mensal")
-	public ResponseEntity<List<Mensal>> gerarMensal(){
-		relatorioServiceMensal.truncarMensal();
-		relatorioServiceMensal.salvarMensal();
-		
-		List<Mensal> mensais = relatorioRepositoryImpl.listarMensal();
-		
-		if(mensais != null) {
-			return ResponseEntity.ok(mensais);
-		}
-		
-		else {
-			return ResponseEntity.notFound().build();
-		}
-		
-	}
-	
 	@GetMapping("/diario")
 	public ResponseEntity<List<Diario>> listarDiario(){
 			List<Diario> diarios = relatorioRepositoryImpl.listarDiario();
