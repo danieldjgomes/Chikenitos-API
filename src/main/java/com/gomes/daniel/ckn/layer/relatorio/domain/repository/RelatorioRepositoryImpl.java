@@ -21,7 +21,7 @@ public class RelatorioRepositoryImpl implements RelatorioRepository {
 	
 	@Override
 	public List<Diario> listarDiario() {
-		return manager.createNativeQuery("select * from diario order by id desc limit 100 ", Diario.class).getResultList();
+		return manager.createNativeQuery("select * from diario order by id desc limit 10 ", Diario.class).getResultList();
 	}
 	
 	@Override
@@ -41,7 +41,7 @@ public class RelatorioRepositoryImpl implements RelatorioRepository {
 
 	@Override
 	public List<Semanal> listarSemanal() {
-		return manager.createNativeQuery("select * from semanal order by id desc limit 52", Semanal.class).getResultList();
+		return manager.createNativeQuery("select * from semanal order by id desc limit 10", Semanal.class).getResultList();
 		
 	}
 	@Override
@@ -60,7 +60,7 @@ public class RelatorioRepositoryImpl implements RelatorioRepository {
 
 	@Override
 	public List<Mensal> listarMensal() {
-		return manager.createNativeQuery("select * from mensal order by id desc limit 36", Mensal.class).getResultList();
+		return manager.createNativeQuery("select * from mensal order by id desc limit 10", Mensal.class).getResultList();
 	}
 
 	@Override
