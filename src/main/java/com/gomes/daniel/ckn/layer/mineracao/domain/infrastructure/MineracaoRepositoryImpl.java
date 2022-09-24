@@ -12,9 +12,8 @@ import org.springframework.stereotype.Component;
 
 import com.gomes.daniel.ckn.layer.mineracao.domain.exception.ErroNaColetaException;
 import com.gomes.daniel.ckn.layer.mineracao.domain.model.Site;
-import com.gomes.daniel.ckn.layer.mineracao.domain.repository.MineracaoRepository;
-import com.gomes.daniel.ckn.layer.pesquisa.domain.model.Mercado;
-import com.gomes.daniel.ckn.layer.pesquisa.domain.model.Pesquisa;
+import com.gomes.daniel.ckn.layer.mineracao.domain.model.Mercado;
+import com.gomes.daniel.ckn.layer.mineracao.domain.model.Pesquisa;
 
 @Component
 public class MineracaoRepositoryImpl implements MineracaoRepository {

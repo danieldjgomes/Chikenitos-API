@@ -1,7 +1,5 @@
 package com.gomes.daniel.ckn.layer.mineracao.domain.model;
 
-import com.gomes.daniel.ckn.layer.pesquisa.domain.model.Mercado;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

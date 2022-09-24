@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.gomes.daniel.ckn.layer.pesquisa.domain.model.Pesquisa;
+import com.gomes.daniel.ckn.layer.mineracao.domain.model.Pesquisa;
 import com.gomes.daniel.ckn.layer.relatorio.domain.model.Semanal;
 import com.gomes.daniel.ckn.layer.relatorio.domain.repository.RelatorioRepositoryImpl;
 import com.gomes.daniel.ckn.layer.relatorio.infrastructure.RelatorioInfrastructure;

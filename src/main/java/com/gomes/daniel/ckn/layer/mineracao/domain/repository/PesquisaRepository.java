@@ -1,8 +1,8 @@
-package com.gomes.daniel.ckn.layer.pesquisa.domain.repository;
+package com.gomes.daniel.ckn.layer.mineracao.domain.repository;
 
 import java.util.List;
 
-import com.gomes.daniel.ckn.layer.pesquisa.domain.model.Pesquisa;
+import com.gomes.daniel.ckn.layer.mineracao.domain.model.Pesquisa;
 
 public interface PesquisaRepository {
 	

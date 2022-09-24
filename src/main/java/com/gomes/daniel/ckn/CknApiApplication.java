@@ -8,9 +8,7 @@ import com.gomes.daniel.ckn.layer.relatorio.service.RelatorioService;
 
 @SpringBootApplication
 public class CknApiApplication {
-	
-	
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(CknApiApplication.class, args);
 		

@@ -1,4 +1,4 @@
-package com.gomes.daniel.ckn.layer.pesquisa.domain.model;
+package com.gomes.daniel.ckn.layer.mineracao.domain.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
